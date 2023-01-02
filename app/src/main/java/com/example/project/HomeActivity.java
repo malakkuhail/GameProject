@@ -30,7 +30,9 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(HomeActivity.this,SettingActivity.class);
-                startActivity(intent);
+               startActivity(intent);
+
+
             }
         });
         binding.logoutTv.setOnClickListener(new View.OnClickListener() {

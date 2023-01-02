@@ -4,11 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class LevelsActivity extends AppCompatActivity {
+import com.example.project.databinding.ActivityLevelsBinding;
 
+public class LevelsActivity extends AppCompatActivity {
+     ActivityLevelsBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_levels);
+        binding=ActivityLevelsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+
+
     }
 }
